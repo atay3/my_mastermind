@@ -28,5 +28,9 @@ int main(int argc, char* argv[]) {
         }
     }
 
+    if (!win_status(&game)) {
+        printf("Game Over. You are out of attempts.\n");
+    }
+
     return 0;
 }
